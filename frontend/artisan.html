@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftNexus - My Artisan Profile</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/artisan.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../assets/logo.png" alt="CraftNexus Logo" class="logo">
+            <ul>
+                <li><a href="artisan.html" class="active">My Profile</a></li>
+                <li><a href="projects.html">My Projects</a></li>
+                <li><a href="../backend/logout.php">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="artisan-section">
+            <h1>My Profile</h1>
+            <p>View and manage your artisan profile.</p>
+            <div class="artisan-content">
+                <img id="artisan-image" src="" alt="Portfolio Image">
+                <div class="artisan-details">
+                    <p><strong>Name:</strong> <span id="artisan-name"></span></p>
+                    <p><strong>Email:</strong> <span id="artisan-email"></span></p>
+                    <p><strong>Phone:</strong> <span id="artisan-phone"></span></p>
+                    <p><strong>Skills:</strong> <span id="artisan-skills"></span></p>
+                    <p><strong>Bio:</strong> <span id="artisan-bio"></span></p>
+                    <p><strong>Joined:</strong> <span id="artisan-joined"></span></p>
+                    <p><strong>Verified Artisan:</strong> <span id="artisan-verified"></span></p>
+                    <p><strong>Sudo Verified:</strong> <span id="artisan-sudo-verified"></span></p>
+                    <p><strong>Jobs Completed:</strong> <span id="artisan-jobs-completed"></span></p>
+                    <p><strong>Jobs Failed:</strong> <span id="artisan-jobs-failed"></span></p>
+                </div>
+            </div>
+            <button class="cta-button" id="edit-profile-btn">Edit Profile</button>
+        </section>
+
+        <section class="edit-profile-section" id="edit-profile-section" style="display: none;">
+            <h2>Edit Profile</h2>
+            <form action="../backend/edit_profile.php" method="POST" enctype="multipart/form-data" class="edit-profile-form">
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" name="phone_number" placeholder="Enter your phone number">
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills (comma-separated)</label>
+                    <input type="text" id="skills" name="skills" required placeholder="e.g., Tailoring, Carpentry">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Bio</label>
+                    <textarea id="bio" name="bio" placeholder="Tell us about yourself"></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="portfolio_image">Portfolio Image</label>
+                    <input type="file" id="portfolio_image" name="portfolio_image" accept="image/*">
+                </div>
+                <button type="submit" class="cta-button">Save Changes</button>
+                <button type="button" class="cta-button secondary" id="cancel-edit">Cancel</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CraftNexus. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/artisan.js"></script>
+</body>
+</html>

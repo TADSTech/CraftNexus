@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftNexus - Explore Artisans</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/explore_artisan.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../assets/logo.png" alt="CraftNexus Logo" class="logo">
+            <ul>
+                <li><a href="explore_artisan.html" class="active">Explore</a></li>
+                <li><a href="project.html">Create Project</a></li>
+                <li><a href="profile.html">Profile</a></li>
+                <li><a href="../backend/logout.php">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="explore-section">
+            <h1>Explore Artisans</h1>
+            <p>Discover skilled artisans for your projects.</p>
+            <div class="search-filter">
+                <input type="text" id="search" placeholder="Search by name or skill">
+                <select id="skill-filter">
+                    <option value="">All Skills</option>
+                    <!-- Skills will be populated dynamically -->
+                </select>
+            </div>
+            <div class="artisan-list" id="artisan-list">
+                <!-- Artisans will be populated dynamically -->
+            </div>
+        </section>
+
+        <section class="artisan-profile" id="artisan-profile" style="display: none;">
+            <h2 id="artisan-name"></h2>
+            <div class="profile-content">
+                <img id="artisan-image" src="" alt="Artisan Portfolio Image">
+                <div class="profile-details">
+                    <p><strong>Skills:</strong> <span id="artisan-skills"></span></p>
+                    <p><strong>Joined:</strong> <span id="artisan-joined"></span></p>
+                    <p><strong>Bio:</strong> <span id="artisan-bio"></span></p>
+                    <p><strong>Phone:</strong> <span id="artisan-phone"></span></p>
+                    <p><strong>Verified Artisan:</strong> <span id="artisan-verified"></span></p>
+                    <p><strong>Sudo Verified:</strong> <span id="artisan-sudo-verified"></span></p>
+                    <p><strong>Jobs Completed:</strong> <span id="artisan-jobs-completed"></span></p>
+                    <p><strong>Jobs Failed:</strong> <span id="artisan-jobs-failed"></span></p>
+                    <button class="cta-button" id="start-project">Start a Project</button>
+                </div>
+            </div>
+            <button class="cta-button secondary" id="back-to-list">Back to List</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CraftNexus. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/artisans.js"></script>
+</body>
+</html>

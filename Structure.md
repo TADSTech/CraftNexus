@@ -1,6 +1,6 @@
 craftnexus/
 │
-├── frontend/                # Partner's area (HTML, CSS, JS)
+├── frontend/                
 │   ├── artisans.html        # Artisan directory
 │   ├── artisan.html         # Single artisan profile
 │   ├── project.html         # Project request form

@@ -1,0 +1,104 @@
+/* Login Page Styles */
+:root {
+    --primary-grey: #4A4A4A;
+    --dark-grey: #2E2E2E;
+    --black: #1A1A1A;
+    --white: #FFFFFF;
+    --desert-sand: #EDC9AF;
+    --desert-sand-dark: #D4A276;
+}
+
+.login-section {
+    max-width: 500px;
+    margin: 3rem auto;
+    padding: 2rem;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.login-section h1 {
+    font-size: 2rem;
+    color: var(--black);
+    margin-bottom: 1rem;
+}
+
+.login-section p {
+    font-size: 1.1rem;
+    color: var(--primary-grey);
+    margin-bottom: 2rem;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.form-group label {
+    font-size: 1rem;
+    color: var(--black);
+    margin-bottom: 0.5rem;
+}
+
+.form-group input {
+    padding: 0.75rem;
+    border: 1px solid var(--primary-grey);
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--desert-sand);
+}
+
+.login-section a {
+    color: var(--desert-sand);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.login-section a:hover {
+    color: var(--desert-sand-dark);
+}
+
+.cta-button {
+    padding: 0.75rem 1.5rem;
+    background-color: var(--desert-sand);
+    color: var(--black);
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: var(--desert-sand-dark);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .login-section {
+        margin: 2rem 1rem;
+        padding: 1.5rem;
+    }
+
+    .login-section h1 {
+        font-size: 1.8rem;
+    }
+
+    .login-section p {
+        font-size: 1rem;
+    }
+}

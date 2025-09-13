@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CraftNexus - Your Profile</title>
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/profile.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <img src="../assets/logo.png" alt="CraftNexus Logo" class="logo">
+            <ul>
+                <li><a href="explore_artisan.html">Explore</a></li>
+                <li><a href="project.html">Create Project</a></li>
+                <li><a href="profile.html" class="active">Profile</a></li>
+                <li><a href="../backend/logout.php">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="profile-section">
+            <h1>Your Profile</h1>
+            <p>Manage your account details.</p>
+            <div class="profile-content">
+                <p><strong>Name:</strong> <span id="user-name"></span></p>
+                <p><strong>Email:</strong> <span id="user-email"></span></p>
+                <p><strong>Verified Entrepreneur:</strong> <span id="user-verified"></span></p>
+            </div>
+            <button class="cta-button" id="edit-profile">Edit Profile</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CraftNexus. All rights reserved.</p>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script src="../js/profile.js"></script>
+</body>
+</html>
